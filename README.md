@@ -13,4 +13,3 @@ After setting up, your workflow becomes:
 * push your commits
 
 stop
-rtue
