@@ -11,3 +11,6 @@ After setting up, your workflow becomes:
 * pull the latest commits from the repository
 * make your changes
 * push your commits
+
+stop
+rtue
