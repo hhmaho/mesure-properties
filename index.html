@@ -18,57 +18,58 @@
 </head>
 
 <body class>
-  <header class="header">
-    <div class="header_inner">
-      <div class="logo">
-        <h1>
-          <a href="file:///C:/Users/Cursist/mesure-properties/index.html">mh</a>
-        </h1>
-      </div>
-      <a href="#" class="nav-toggle" aria-hidden="false">Menu</a>
-    </div>
+    <header>
+        <div id="wrap">
+            <a href="index.html" title="Home"><img class="logo" src="img/logo.png" alt="Logo"/></a>
+            <nav id="nav">
+              <ul>
+                <li><a class="selected" href="index.html" title="Home">Home</a></li>
+                <li><a href="menu.html" title="Menu">Menu</a></li>
+                <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+                <li><a href="https://www.instagram.com/" title="Instagram" target="_blank"/><img class="instagram-header-icon" src="img/instagram-header-icon.png" alt="Instagram Icon"></a></li>
+              </ul>
+            </nav>
+        </div>
+      </header>
 
-  </header>
-  <img src="img/beagle.jpg" />
+      <div class="home-picture">
+          <img src="img/IMG_4463.jpg" />
+      </div>
+
 
   <div id="app-4">
-    <!--<table v-for="entry in list">
-      <tr>
-        {{ entry.eenheden }}
-        <td>{{ entry.Cicero }}</td>
-      </tr>
-      <tr>
-        {{ entry.afkorting }}
-        <td>{{ entry.Didot-punt }}</td>
-
-      </tr>
-      <tr>
-        {{ entry.dd }}
-        <td>{{ entry.Pica-punt }}</td>
-
-      </tr>
-      <tr>
-        {{ entry.pp }}
-        <td>{{ entry.DTP-punt }}</td>
-
-      </tr>
-      <tr>
-        {{ entry.pt }}
-        <td>{{ entry.Inch }}</td>
-
-      </tr>
-
-    </table>-->
+    
     <ol>
-      <li v-for="entry in list">
-        <h1>
-          {{ entry.eenheden }}
-        </h1>
-        <p>{{ entry.afkorting }}</p>
-      </li>
-    </ol>
-  </div>
+        <li v-for="entry in list">
+          <h2>
+            {{ entry.eenheden }}
+          </h2>
+          <p>{{ entry.afkorting }}</p>
+        </li>
 
+    <ol>
+        <li v-for="entry in list">
+          <h2>
+            {{ entry.milimeter }}
+          </h2>
+          <p>{{ entry.inch }}</p>
+        </li>
+      </ol>
+             
+
+	<div class="main">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A illo veniam, earum fuga qui vitae officia eligendi consequatur.
+    </p>
+
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa <a href="gallery.html" title="Gallery">see my gallery</a> quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur ab reiciendis aspernatur obcaecati provident quibusdam rem? Consequuntur illo esse praesentium quos quo?</p>
+	</div>
+
+	<footer>
+		<p>2018.08 first project</p>
+	</footer>
 </body>
 
 </html>
