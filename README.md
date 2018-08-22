@@ -1,4 +1,4 @@
-This is an example projec demonstrating the following skills:
+This is an example project demonstrating the following skills:
 
 * creating a new git repository on github
 * making a local clone of this repository
