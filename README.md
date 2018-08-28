@@ -12,4 +12,4 @@ After setting up, your workflow becomes:
 * make your changes
 * push your commits
 
-vandaag opnieuw geformateerd
+stop
