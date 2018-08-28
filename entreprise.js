@@ -51,3 +51,4 @@ return total/aantalDoden
  sendCards(workers)
  console.log(loonkost(workers))
  console.log("gemiddelde:",gemiddelde(workers))
+
