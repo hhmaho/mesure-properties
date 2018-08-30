@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.2/tabletop.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body class>
+    <header>
+      <div id="wrap">
+          <a href="index.html" title="Home"><img class="logo" src="img/logo.png" alt="Logo"/></a>
+          <!--<select name="tabulaties" id="tabs">
+            <option disabled selected value="index">Home</option>
+            <option value="Menu">Menu</option>
+            <option value="Gallery">Gallery</option>
+            <option value="Contact">Contact</option>
+          </select>-->
+          <button type="button" id="index">Home</button>
+          
+          <!--<nav id="nav"> hier begint mijn vorige code voor de tabs
+            <ul>
+              <li><a href="index.html" title="Home">Home</a></li>
+              <li><a href="menu.html" title="Menu">Menu</a></li>
+              <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+              <li><a href="contact.html" title="Contact">Contact</a></li>
+              <li><a href="https://www.instagram.com/" title="Instagram" target="_blank"/><img class="instagram-header-icon" src="img/instagram-header-icon.png" alt="Instagram Icon"></a></li>
+            </ul>
+          </nav> hier eindigt mijn vorige code-->
+         
+
+          <!--<button id="home">HOME</button>-->
+          <script>
+             /* soepcode niet duidelijk voor mezelf
+             ik gebruik een array voor mijn tabs
+            tabPag = [
+              { title: 'Home', content: button}
+              { title: 'Menu', content: button}
+              { title: 'Gallery', content: button}
+              { title: 'Contact', content: button}
+            ]
+            var button=document.getElementById('wrap')
+            button.addEventListener('onclick', function nieuwePag(tabPag){
+              var div = document.createElement('div')
+
+              div.appendChild(button)
+
+              return div
+            }
+            )
+
+            // ik pas een functie toe op mijn arrays
+            function clickTabs (navigate){
+              return(navigatie = Home)
+            }
+            document.onclick(Home)
+
+            if(click = Home){
+            document.getElementById("wrap").innerHTML = "HOME"
+            }
+            hier eindigt mijn soepcode */
+
+          // functie tabOptie
+          function tabOptie(){
+            var knopNav=document.getElementById("paginas").value;
+            if(knopNav == "Menu" ){
+              document.getElementById("Menu").innerHTML = menu.html
+            }
+            else(knopNav=home){
+              knopNav = index.html
+            }
+          }
+
+          // click op de tabs roept een functie op
+          
+
+          
+          </script>
+      </div><!--wrap-->
+    </header>
+
+    <div class="home-picture">
+        <img src="img/IMG_4463.jpg" width="100%" />
+    </div>
+
+    <div id="app-4" class="googlesheet">
+      
+      <ol>
+          <li v-for="entry in list">
+            <h2>
+              {{ entry.eenheden }}
+            </h2>
+            <p>{{ entry.afkorting }}</p>
+          </li>
+
+      <ol>
+          <li v-for="entry in list">
+            <h2>
+              {{ entry.milimeter }}
+            </h2>
+            <p>{{ entry.inch }}</p>
+          </li>
+        </ol>
+      </div>         
+
+    <div class="main">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A illo veniam, earum fuga qui vitae officia eligendi consequatur.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa <a href="gallery.html" title="Gallery">see my gallery</a> quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur ab reiciendis aspernatur obcaecati provident quibusdam rem? Consequuntur illo esse praesentium quos quo?</p>
+    </div>
+
+    <footer>
+      <p>2018.08 first project</p>
+	  </footer>
+</body>
+
+</html>
