@@ -60,6 +60,16 @@
 
   <div id="eenheden">
     <script>
+      // maak een DOM Element
+      function elem(){
+        document.createElement;
+      }
+
+      // maak een DOM TextNode
+      function text(){
+        document.createTextNode;
+      }
+
       units = [
         { name: 'Cicero', content: 'cc - 12  - - 4.5' },
         { name: 'Didot-punt', content: 'dd - 1 - - 0.375' },
@@ -67,15 +77,15 @@
       ]
 
       function renderUnit(input) {
-        var div = document.createElement('div')
-        var h1 = document.createElement('h1')
-        var p = document.createElement('p')
+        var div = elem('div')
+        var h1 = elem('h1')
+        var p = elem('p')
 
         div.appendChild(h1)
         div.appendChild(p)
 
-        var name = document.createTextNode(input.name)
-        var content = document.createTextNode(input.content)
+        var name = text(input.name)
+        var content = text(input.content)
 
         h1.appendChild(name)
         p.appendChild(content)
@@ -87,7 +97,7 @@
       //console.log(renderUnit(unit))
 
       function renderUnits(units) {
-        var div = document.createElement('div')
+        var div = elem('div')
 
         for (var i = 0; i < units.length; i = i + 1) {
             var unit = units[i]
