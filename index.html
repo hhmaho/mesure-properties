@@ -8,7 +8,7 @@
   <meta name="description" content="Persoonlijke website over graphic design, typografie, fotografie, vrije tijd en knutselen">
   <title>Marianne</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="project_main.css" />
 
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.2/tabletop.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
@@ -20,7 +20,7 @@
     <div id="wrap">
         <a href="index.html" title="Home"><img class="logo" src="img/logo.png" alt="Logo"/></a>
         
-    <nav id="nav"> hier begint mijn vorige code voor de tabs
+    <nav id="nav"> <!--hier begint mijn vorige code voor de tabs-->
         <ul>
           <li><a href="index.html" title="Home">Home</a></li>
           <li><a href="menu.html" title="Menu">Menu</a></li>
@@ -61,14 +61,20 @@
   <div id="eenheden">
     <script>
       // maak een DOM Element
-      function elem(){
-        document.createElement;
+      function elem(tag) {
+      //console.log(tag)
+        return document.createElement(tag)
       }
 
+      //console.log(elem('p'))
+
       // maak een DOM TextNode
-      function text(){
-        document.createTextNode;
+      function text(tag) {
+        //console.log(tag)
+        return document.createTextNode(tag);
       }
+
+      //console.log(text('name'))
 
       units = [
         { name: 'Cicero', content: 'cc - 12  - - 4.5' },
