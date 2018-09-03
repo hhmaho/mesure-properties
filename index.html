@@ -69,12 +69,20 @@
       //console.log(elem('p'))
 
       // maak een DOM TextNode
-      function text(tag) {
-        //console.log(tag)
-        return document.createTextNode(tag);
+      function text(data) {
+        return document.createTextNode(data);
       }
 
-      //console.log(text('name'))
+      //console.log(text('test'))
+
+      //doet een appnd van alle arguments aan de eerste argument.
+      // bvb: append( document.body, elem('div'))
+
+      function append(arguments){
+      console.log (arguments)
+      }
+
+ 
 
       units = [
         { name: 'Cicero', content: 'cc - 12  - - 4.5' },
