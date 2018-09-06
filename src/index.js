@@ -1,10 +1,12 @@
-/*crel = require('crel')
+var render = require ('./render')
+var tabletop = require('./tabletop')
 
-var page = crel ('div')
-crel('h1', 'some title')
-crel('p', 'some content')
-
-
-document.body.appendChild(crel('h1','test'))*/
-
-console.log("ok")
+tabletop.init({
+    key: 'https://docs.google.com/spreadsheets/d/1HQLmOx7gHBh1SvKWuBSQB5xt1JD-hTwxsAtXUpprmiU/edit?usp=sharing',
+    //key: 'https://docs.google.com/spreadsheets/d/14GTxRdrZgGe2sLrxX-KErQnWuNR2St25qgJHZXLNrhk/pubhtml',
+    callback: function (tabletopData, tabletop) {
+      console.debug(tabletopData)
+      document.body.appendChild(render(tabletopData))
+    },
+    simpleSheet: true
+  })

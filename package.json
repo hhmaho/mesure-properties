@@ -5,7 +5,8 @@
   "author": "Olmo Ziarko <olmo.ziarko@intecbrussel.be>",
   "license": "MIT",
   "dependencies": {
-    "crel": "^3.1.0"
+    "crel": "^3.1.0",
+    "tabletop": "^1.5.2"
   },
   "devDependencies": {
     "css-loader": "^1.0.0",
@@ -19,4 +20,4 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
   }
- }
+}
