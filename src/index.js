@@ -10,3 +10,4 @@ tabletop.init({
     },
     simpleSheet: true
   })
+
