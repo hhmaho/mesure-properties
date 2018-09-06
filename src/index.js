@@ -1,5 +1,5 @@
 var render = require ('./render')
-var tabletop = require('./tabletop')
+var tabletop = require ('tabletop')
 
 tabletop.init({
     key: 'https://docs.google.com/spreadsheets/d/1HQLmOx7gHBh1SvKWuBSQB5xt1JD-hTwxsAtXUpprmiU/edit?usp=sharing',
