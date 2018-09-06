@@ -1,0 +1,51 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Users\Intec\AppData\Local\Microsoft\WindowsApps;;C:\Users\Intec\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Intec\AppData\Roaming\npm;C:\Users\Intec\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  8.11.4
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\Intec\mesure-properties\package.json: Unexpected string in JSON at position 206
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:92:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:103:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "mesure-properties",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/hhmaho/mesure-properties.git",
+    "author": "hhmaho <hhmaho@gmail.com>",
+    "license": "MIT"
+  }
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
