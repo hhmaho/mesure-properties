@@ -1,0 +1,24 @@
+{
+  "name": "mesure-properties",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hhmaho/mesure-properties.git",
+  "author": "hhmaho <42540357+hhmaho@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "crel": "^3.1.0",
+    "tabletop": "^1.5.2"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  }
+}
