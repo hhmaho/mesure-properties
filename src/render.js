@@ -1,5 +1,6 @@
 var crel = require('crel')
 
+<<<<<<< HEAD
 function renderHeader() {
  return crel('h1', 'Dictionary')
 }
@@ -35,3 +36,16 @@ function renderApp(entries) {
 }
 
 module.exports = renderApp
+=======
+
+function mainOptions() {
+    return crel('li', crel('a', 'home'))
+}
+
+function mainPic() {
+    return crel('div', 
+    crel('img', {'src' : 'img/IMG_4463.jpg'}))
+}
+
+module.exports = mainPic
+>>>>>>> 929208b53b2f2e51b5559056d1d1bd10dfed7285
