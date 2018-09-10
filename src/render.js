@@ -11,13 +11,12 @@ function renderFooter() {
 }
 //entry vervangen met unit
 function renderUnit(unit) {
-    var component = crel('li')
-    return crel(component, unit.naam)
+    return crel('li', unit.naam, unit.afkorting)
    }
 //test
 function renderUnits(units) {
- return crel('ul',
-   units.map(renderUnit))
+  return crel('ul',
+    units.map(renderUnit))
 }
 //test
 function renderApp(units) {
