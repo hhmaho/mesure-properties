@@ -1,6 +1,7 @@
 var crel = require('crel')
 var tabletop = require ('tabletop')
 var render = require('./render.js')
+var indexstyle = require('./indexstyle.css')
 
 tabletop.init({
     key: 'https://docs.google.com/spreadsheets/d/1HQLmOx7gHBh1SvKWuBSQB5xt1JD-hTwxsAtXUpprmiU/edit?usp=sharing',

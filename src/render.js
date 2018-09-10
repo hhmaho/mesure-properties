@@ -3,7 +3,7 @@ var crel = require('crel')
 function renderHeader() {
  return crel('h1', 'mh')
 // return crel('div', 
-  //  crel('img', {'src' : '/img/logo.png'}))
+ //crel('img', {src: '/img/logo.png'})
 }
 
 function renderFooter() {
