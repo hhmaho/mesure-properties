@@ -1,18 +1,16 @@
 var crel = require('crel')
 
 function renderHeader() {
- return crel('h1', 'mh')
-// return crel('div', 
-  //  crel('img', {'src' : '/img/logo.png'}))
+ return crel('h1', 'Dictionary')
 }
 
 function renderFooter() {
- return crel('address', 'Marianne')
+ return crel('address', 'Olmo Ziarko')
 }
-//entry vervangen met uint
-function renderUnit(unit) {
+
+function renderEntry(entry) {
     var component = crel('li')
-    var button = crel('button', 'navigation')
+    var button = crel('button', 'see answer')
    
     button.addEventListener('click', function () {
       var content = crel('p', entry.definition)
@@ -23,12 +21,12 @@ function renderUnit(unit) {
    
     return crel(component, entry.term, button)
    }
-//test
+
 function renderEntries(entries) {
  return crel('ul',
    entries.map(renderEntry))
 }
-//test
+
 function renderApp(entries) {
  return crel('div',
    renderHeader(),

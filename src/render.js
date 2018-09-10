@@ -1,36 +1,29 @@
 var crel = require('crel')
 
 function renderHeader() {
- return crel('h1', 'Dictionary')
+ return crel('h1', 'mh')
+// return crel('div', 
+  //  crel('img', {'src' : '/img/logo.png'}))
 }
 
 function renderFooter() {
- return crel('address', 'Olmo Ziarko')
+ return crel('address', 'Marianne')
 }
-
-function renderEntry(entry) {
+//entry vervangen met unit
+function renderUnit(unit) {
     var component = crel('li')
-    var button = crel('button', 'see answer')
-   
-    button.addEventListener('click', function () {
-      var content = crel('p', entry.definition)
-   
-      component.removeChild(button)
-      component.appendChild(content)
-    })
-   
-    return crel(component, entry.term, button)
+    return crel(component, unit.naam)
    }
-
-function renderEntries(entries) {
+//test
+function renderUnits(units) {
  return crel('ul',
-   entries.map(renderEntry))
+   units.map(renderUnit))
 }
-
-function renderApp(entries) {
+//test
+function renderApp(units) {
  return crel('div',
    renderHeader(),
-   renderEntries(entries),
+   renderUnits(units),
    renderFooter())
 }
 
