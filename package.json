@@ -1,4 +1,14 @@
 {
+<<<<<<< HEAD
+  "name": "mesure-properties",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hhmaho/mesure-properties.git",
+  "author": "hhmaho <42540357+hhmaho@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "crel": "^3.1.0",
+=======
   "name": "yarn-demo",
   "version": "1.0.0",
   "main": "index.js",
@@ -7,6 +17,7 @@
   "dependencies": {
     "crel": "^3.1.0",
     "eslint": "^5.5.0",
+>>>>>>> 929208b53b2f2e51b5559056d1d1bd10dfed7285
     "tabletop": "^1.5.2"
   },
   "devDependencies": {
