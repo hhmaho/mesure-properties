@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-node_modules
-=======
 node_modules/
-yarn-error.log/
->>>>>>> 929208b53b2f2e51b5559056d1d1bd10dfed7285
+yarn-error.log
 dist
