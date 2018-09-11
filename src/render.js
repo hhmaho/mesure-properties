@@ -1,14 +1,20 @@
 var crel = require('crel')
 
 function renderHeader() {
- return crel('div', {'id':'wrap'},
- crel('img', {src: '/img/logo.png'}),
- crel('h1', 'index'),
+ return crel('header',
+    crel('div', {'id':'wrap'}),
+    crel('img', {'class':'logo', 'src': '/img/logo.png'}),
+    crel('button', 'home'), 
+    crel('button', 'menu'),
+    crel('button', 'gallery'),
+    crel('button', 'contact'),
  )
 }
 
 function renderFooter() {
- return crel('address', 'Marianne')
+ return crel('footer',
+    crel('address', 'Marianne'),
+ )
 }
 //entry vervangen met unit
 function renderUnit(unit) {
